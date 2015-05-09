@@ -1,4 +1,4 @@
-const-max-uint8
+Max Uint8
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,25 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-const-max-uint8' );
+var MAX_UINT8 = require( 'compute-const-max-uint8' );
 ```
 
-#### foo( arr )
+#### MAX_UINT8
 
-What does this function do?
+Maximum unsigned 8-bit integer.
+
+``` javascript
+MAX_UINT8 === Math.pow( 2, 8 ) - 1;
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-const-max-uint8' );
+var MAX_UINT8 = require( 'compute-const-max-uint8' );
+
+console.log( MAX_UINT8 );
+// returns 255
 ```
 
 To run the example code from the top-level application directory,

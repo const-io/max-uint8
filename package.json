@@ -25,7 +25,15 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "max",
+    "maximum",
+    "uint8",
+    "integer",
+    "unsigned",
+    "8-bit",
+    "const",
+    "constant"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/const-max-uint8/issues"
