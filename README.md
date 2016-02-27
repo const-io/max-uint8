@@ -1,4 +1,4 @@
-Max Uint8
+MAX UINT8
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -10,8 +10,6 @@ Max Uint8
 ``` bash
 $ npm install compute-const-max-uint8
 ```
-
-For use in the browser, use [browserify](https://github.com/substack/node-browserify).
 
 
 ## Usage
@@ -45,11 +43,12 @@ $ node ./examples/index.js
 ```
 
 
+---
 ## Tests
 
 ### Unit
 
-Unit tests use the [Mocha](http://mochajs.org/) test framework with [Chai](http://chaijs.com) assertions. To run the tests, execute the following command in the top-level application directory:
+This repository uses [tape][tape] for unit tests. To run the tests, execute the following command in the top-level application directory:
 
 ``` bash
 $ make test
@@ -60,7 +59,7 @@ All new feature development should have corresponding unit tests to validate cor
 
 ### Test Coverage
 
-This repository uses [Istanbul](https://github.com/gotwarlost/istanbul) as its code coverage tool. To generate a test coverage report, execute the following command in the top-level application directory:
+This repository uses [Istanbul][istanbul] as its code coverage tool. To generate a test coverage report, execute the following command in the top-level application directory:
 
 ``` bash
 $ make test-cov
@@ -73,31 +72,54 @@ $ make view-cov
 ```
 
 
+### Browser Support
+
+This repository uses [Testling][testling] for browser testing. To run the tests in a (headless) local web browser, execute the following command in the top-level application directory:
+
+``` bash
+$ make test-browsers
+```
+
+To view the tests in a local web browser,
+
+``` bash
+$ make view-browser-tests
+```
+
+<!-- [![browser support][browsers-image]][browsers-url] -->
+
+
 ---
 ## License
 
-[MIT license](http://opensource.org/licenses/MIT). 
+[MIT license](http://opensource.org/licenses/MIT).
 
 
 ## Copyright
 
-Copyright &copy; 2015. Athan Reines.
+Copyright &copy; 2015-2016. The [Compute.io][compute-io] Authors.
 
 
 [npm-image]: http://img.shields.io/npm/v/compute-const-max-uint8.svg
 [npm-url]: https://npmjs.org/package/compute-const-max-uint8
 
-[travis-image]: http://img.shields.io/travis/compute-io/const-max-uint8/master.svg
-[travis-url]: https://travis-ci.org/compute-io/const-max-uint8
+[build-image]: http://img.shields.io/travis/const-io/max-uint8/master.svg
+[build-url]: https://travis-ci.org/const-io/max-uint8
 
-[coveralls-image]: https://img.shields.io/coveralls/compute-io/const-max-uint8/master.svg
-[coveralls-url]: https://coveralls.io/r/compute-io/const-max-uint8?branch=master
+[coverage-image]: https://img.shields.io/codecov/c/github/const-io/max-uint8/master.svg
+[coverage-url]: https://codecov.io/github/const-io/max-uint8?branch=master
 
-[dependencies-image]: http://img.shields.io/david/compute-io/const-max-uint8.svg
-[dependencies-url]: https://david-dm.org/compute-io/const-max-uint8
+[dependencies-image]: http://img.shields.io/david/const-io/max-uint8.svg
+[dependencies-url]: https://david-dm.org/const-io/max-uint8
 
-[dev-dependencies-image]: http://img.shields.io/david/dev/compute-io/const-max-uint8.svg
-[dev-dependencies-url]: https://david-dm.org/dev/compute-io/const-max-uint8
+[dev-dependencies-image]: http://img.shields.io/david/dev/const-io/max-uint8.svg
+[dev-dependencies-url]: https://david-dm.org/dev/const-io/max-uint8
 
-[github-issues-image]: http://img.shields.io/github/issues/compute-io/const-max-uint8.svg
-[github-issues-url]: https://github.com/compute-io/const-max-uint8/issues
+[github-issues-image]: http://img.shields.io/github/issues/const-io/max-uint8.svg
+[github-issues-url]: https://github.com/const-io/max-uint8/issues
+
+[tape]: https://github.com/substack/tape
+[istanbul]: https://github.com/gotwarlost/istanbul
+[testling]: https://ci.testling.com
+
+[compute-io]: https://github.com/compute-io
